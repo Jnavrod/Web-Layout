@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section class="main-container">
+        <div class="left-side">
+          <img src="assets/background.png" alt="Background" />
+        </div>
+
+        <div class="right-side">
+            <div class="content-wrapper">
+                <div class="login-header">
+                <h1>Welcome back</h1>
+                <p>
+                    Welcome to the login page, please enter your identity for enter your
+                    account
+                </p>
+                </div>            
+
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username"/>
+
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" placeholder="Enter password">
+                        <span class="toggle-icon"><img src="assets/eye.png" alt="eye"></span>
+                    </div>
+
+                    <div>
+                        <a href="#">Forgot password</a>
+                    </div>
+
+                    <button class="login-button">Login</button>
+                </form>
+
+                <div class="footer-login">
+                    <div class="login-option">
+                        <p>Or login with</p>
+                        <div class="login-buttons-container">
+                            <button type="button" aria-label="Login with Google" class="options-buttons">
+                                <img src="assets/google.png" alt="Google" class="login-icons"/>
+                            </button>
+                            <button type="button" aria-label="Login with Facebook" class="options-buttons">
+                                <img src="assets/facebook.png" alt="Facebook" class="login-icons"/>
+                            </button>
+                            <button type="button" aria-label="Login with Apple" class="options-buttons">
+                                <img src="assets/apple.png" alt="Apple" class="login-icons"/>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="another-login-option">Don't have an account? <a href="sign_up.html" class="go-to-sign-up">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
