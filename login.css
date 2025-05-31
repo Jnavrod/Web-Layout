@@ -15,7 +15,9 @@ body {
 
 .left-side {
   width: 50%;
-  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .right-side {

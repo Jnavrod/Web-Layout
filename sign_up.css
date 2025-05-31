@@ -17,14 +17,19 @@ body {
 .left-side, .right-side {
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 40px;
 }
 
 .content-left, .content-right {
   width: 100%;
   max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
