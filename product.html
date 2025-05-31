@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Dashboard</title>
+  <link rel="stylesheet" href="product.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">Carryon</div>
+      <nav class="nav">
+        <a href="#" class="nav-item active">Overview</a>
+        <a href="#" class="nav-item">Product</a>
+        <a href="#" class="nav-item">Customer</a>
+        <a href="#" class="nav-item">Message</a>
+        <a href="#" class="nav-item">Sales</a>
+      </nav>
+      <a href="#" class="settings">Setting</a>
+      <a href="#" class="logout">Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <input type="text" placeholder="Searching" class="search-bar" />
+        <div class="user-info">
+          <span>George Nico</span>
+          <small>Admin</small>
+        </div>
+      </header>
+
+      <section class="content-area">
+        <div class="header-section">
+          <h2>Product</h2>
+          <p>Manage our product inventory, ensuring all listings are up-to-date and accurate</p>
+          <div class="action-buttons">
+            <button class="btn-select">Select</button>
+            <button class="btn-sort">Sort by</button>
+            <button class="btn-add">+ Add product</button>
+          </div>
+        </div>
+
+        <div class="grid-container">
+          <div class="product-card">
+            <div class="image-placeholder"></div>
+            <h3 class="product-name">Toyota GT 86</h3>
+            <div class="product-details">
+              <img src="assets/fuel.png" alt="fuel" />
+              <span>80L</span>
+              <img src="assets/manual.png" alt="manual" />
+              <span>Manual</span>
+              <img src="assets/seat.png" alt="seat" />
+              <span>2</span>
+            </div>
+            <div class="price">$37.612</div>
+            <button class="btn-edit">Edit</button>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <button class="btn-page">Previous</button>
+          <button class="btn-page">1</button>
+          <span>...</span>
+          <button class="btn-page">9</button>
+          <button class="btn-page">10</button>
+          <button class="btn-page">Next</button>
+        </div>
+      </section>
+
+      <aside class="filters">
+        <div class="filter-group">
+          <h4>Price</h4>
+          <input type="range" min="200" max="4000" />
+        </div>
+
+        <div class="filter-group">
+          <h4>Bodytype</h4>
+          <label><input type="checkbox" checked /> Coupe</label>
+          <label><input type="checkbox" checked /> SUV</label>
+          <label><input type="checkbox" /> Sedan</label>
+          <label><input type="checkbox" /> Pickup</label>
+          <label><input type="checkbox" /> Crossover</label>
+          <label><input type="checkbox" /> MPV</label>
+          <label><input type="checkbox" /> Hatchback</label>
+          <label><input type="checkbox" /> VAN</label>
+        </div>
+
+        <div class="filter-group">
+          <h4>Transition</h4>
+          <label><input type="radio" name="trans" checked /> Any</label>
+          <label><input type="radio" name="trans" /> Manual</label>
+          <label><input type="radio" name="trans" /> Automatic</label>
+        </div>
+
+        <div class="filter-group">
+          <h4>Seat capacity</h4>
+          <button>-</button>
+          <span>2</span>
+          <button>+</button>
+        </div>
+
+        <button class="btn-confirm">Confirm</button>
+      </aside>
+    </main>
+  </div>
+</body>
+
+</html>
