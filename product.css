@@ -315,12 +315,60 @@ body {
 .filter-options {
     max-width: 80%;
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
 }
 
-.passenger-capacity {
+.filter-options label {
     display: flex;
-    margin: 15px;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-options input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #adde34;
+  background-color: white;
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #888;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Borde + fondo verde */
+.filter-options input[type="radio"]:checked {
+  border-color: #adde34;
+  background-color: #adde34;
+}
+
+/* Anillo blanco centrado */
+.filter-options input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Punto verde centrado */
+.filter-options input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #adde34;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .capacity-display {
@@ -335,6 +383,7 @@ body {
     width: 24px;
     height: 24px;
     margin: 0 20px 0 1px;
+    border: none;
 }
 
 .checkbox-list {
@@ -342,6 +391,33 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
 }
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #888;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #adde34;
+  border-color: #adde34;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/**/
 
 .form-filter {
     width: 100%;
@@ -362,6 +438,56 @@ body {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.stock-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.stock-title a {
+    text-align: right;
+}
+
+.qty-product {
+    font-size: x-large;
+}
+
+.img-bar {
+    width: 100%;
+}
+
+.stock-bar-container {
+    display: flex;
+    gap: auto;
+    justify-content: space-between;
+}
+
+.stock-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.legend-available {
+    background-color: #adde34;
+    width: 12px;
+    height: 12px;
+}
+
+.legend-lowstock {
+    background-color: #ffde38;
+    width: 12px;
+    height: 12px;
+}
+
+.legend-outofstock {
+    background-color: #ff5252;
+    width: 12px;
+    height: 12px;
 }
 
 .pagination {
