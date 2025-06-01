@@ -110,6 +110,7 @@ body {
 .main-body {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 20px;
     width: 100%;
 }
@@ -117,13 +118,11 @@ body {
 .grid-container {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
     gap: 20px;
 }
 
 .product-card {
-    width: 268px;
-    height: 291.25px;
     background: #fff;
     border-radius: 10px;
     padding: 15px;
@@ -131,6 +130,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    aspect-ratio: 268 / 291.25;
+    min-height: 291.25px;
 }
 
 .product-header {
@@ -152,6 +153,14 @@ body {
     height: 107px;
     background-color: #e0e0e0;
     border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .product-details {
