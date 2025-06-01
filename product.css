@@ -92,17 +92,50 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
 .search-bar {
     padding: 8px;
-    width: 300px;
+    width: 609px;
+    height: 48px;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
 
+.user_mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.user_mark img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid grey;
+    display: block;
+}
+
 .user-info {
-    text-align: right;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.user-info span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.user-info small {
+  font-size: 14px;
+  color:grey
 }
 
 .content-area {
@@ -232,7 +265,7 @@ body {
 }
 
 .filters {
-    width: 240px;
+    width: 358px;
     flex-shrink: 0;
     background: #fff;
     padding: 20px;
@@ -245,6 +278,11 @@ body {
     margin-bottom: 20px;
 }
 
+.filter-group h3 {
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+
 .filter-group h4 {
     margin-bottom: 8px;
 }
@@ -252,6 +290,33 @@ body {
 .filter-group label, .filter-group button {
     display: block;
     margin-bottom: 5px;
+}
+
+.filter-group img {
+    width: 24px;
+    height: 24px;
+}
+
+.filter-bodytype {
+    display: flex;
+    gap: 12px;
+}
+
+.checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.form-filter {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-confirm {

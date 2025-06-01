@@ -40,10 +40,13 @@
 
     <main class="main-content">
         <header class="top-bar">
-            <input type="text" placeholder="Searching" class="search-bar" />
-            <div class="user-info">
-                <span>George Nico</span>
-                <small>Admin</small>
+            <input type="text" placeholder="Searching" class="search-bar"/>
+            <div class="user-mark">
+                <img src="assets/avatar.png" alt="Avatar">
+                <div class="user-info">
+                    <span>George Nico</span>
+                    <small>Admin</small>
+                </div>
             </div>
         </header>
 
@@ -364,20 +367,38 @@
 
                     <aside class="filters">
                         <div class="filter-group">
+                            <h3>Filter</h3>
                             <h4>Price</h4>
-                            <input type="range" min="200" max="4000" />
+                            <img src="assets/picture.png" alt="Price Graph">
                         </div>
 
+                        <form class="form-filter">
+                            <div class="form-element">
+                                <label for="min">Min</label>
+                                <input type="number">
+                            </div>
+                            <div class="form-element">
+                                <label for="max">Max</label>
+                                <input type="number">
+                            </div>
+                        </form>
+
                         <div class="filter-group">
-                            <h4>Bodytype</h4>
-                            <label><input type="checkbox" checked /> Coupe</label>
-                            <label><input type="checkbox" checked /> SUV</label>
-                            <label><input type="checkbox" /> Sedan</label>
-                            <label><input type="checkbox" /> Pickup</label>
-                            <label><input type="checkbox" /> Crossover</label>
-                            <label><input type="checkbox" /> MPV</label>
-                            <label><input type="checkbox" /> Hatchback</label>
-                            <label><input type="checkbox" /> VAN</label>
+                            <div class="filter-bodytype">
+                                <img src="assets/bodytype.png" alt="Bodytype">
+                                <h4>Bodytype</h4>
+                            </div>
+
+                            <div class="checkbox-list">
+                                <label><input type="checkbox" checked /> Coupe</label>
+                                <label><input type="checkbox" checked /> SUV</label>
+                                <label><input type="checkbox" /> Sedan</label>
+                                <label><input type="checkbox" /> Pickup</label>
+                                <label><input type="checkbox" /> Crossover</label>
+                                <label><input type="checkbox" /> MPV</label>
+                                <label><input type="checkbox" /> Hatchback</label>
+                                <label><input type="checkbox" /> VAN</label>
+                            </div>
                         </div>
 
                         <div class="filter-group">
