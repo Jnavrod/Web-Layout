@@ -555,15 +555,52 @@ input[type="checkbox"]:checked::after {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.btn-page {
+.pagination button {
+    font-size: 18px;
+}
+
+.btn-page-prev {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
+    width: 98px;
+    height: 46px;
+    border-radius: 12px;
+}
+
+.btn-page-number {
+    color: grey;
+    background-color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-page-number-selected {
+    color: black;
+    background-color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-page-next {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 68px;
+    height: 46px;
 }
 
 @media (max-width: 768px) {
