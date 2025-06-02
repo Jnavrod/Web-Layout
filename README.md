@@ -15,11 +15,7 @@ Web-Layout/
 │ ├── Carryon.png
 │ ├── avatar.png
 │ ├── bin.png
-│ ├── fuel.png
-│ ├── gear.png
-│ ├── overview.png
-│ ├── product-background.png
-│ └── seat.png
+│ └── ...etc
 ├── login.html
 ├── login.css
 ├── sign_up.html
