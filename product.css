@@ -127,7 +127,7 @@ body {
     border: 1px solid #ccc;
 }
 
-.user_mark {
+.user-mark {
     display: inline-flex;
     align-items: center;
     gap: 32px;
