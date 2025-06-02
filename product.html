@@ -10,431 +10,392 @@
 </head>
 
 <body>
-  <div class="dashboard">
-    <aside class="sidebar">
-        <div class="logo"><img src="assets/Carryon.png" alt="Carryon"></div>
-        <nav class="nav">
-            <button class="dash-button" type="button">
-                <img src="assets/overview.png" alt="Overview">
-                <p class="nav-item">Overview</p>
-            </button>
-            <button class="dash-button-active" type="button">
-                <img src="assets/product.png" alt="Product">
-                <p class="nav-item">Product</p>
-            </button>
-            <button class="dash-button" type="button">
-                <img src="assets/customer.png" alt="Customer">
-                <p class="nav-item">Customer</p>
-            </button>
-            <button class="dash-button" type="button">
-                <img src="assets/message.png" alt="Message">
-                <p class="nav-item">Message</p>
-            </button>
-            <button class="dash-button" type="button">
-                <img src="assets/sales.png" alt="Sales">
-                <p class="nav-item">Sales</p>
-            </button>
-        </nav>
-    
-    </aside>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo"><img src="assets/Carryon.png" alt="Carryon"></div>
+            <nav class="nav">
+                <button class="dash-button" type="button">
+                    <img src="assets/overview.png" alt="Overview">
+                    <p class="nav-item">Overview</p>
+                </button>
+                <button class="dash-button-active" type="button">
+                    <img src="assets/product.png" alt="Product">
+                    <p class="nav-item">Product</p>
+                </button>
+                <button class="dash-button" type="button">
+                    <img src="assets/customer.png" alt="Customer">
+                    <p class="nav-item">Customer</p>
+                </button>
+                <button class="dash-button" type="button">
+                    <img src="assets/message.png" alt="Message">
+                    <p class="nav-item">Message</p>
+                </button>
+                <button class="dash-button" type="button">
+                    <img src="assets/sales.png" alt="Sales">
+                    <p class="nav-item">Sales</p>
+                </button>
+            </nav>
+            <nav class="footer-sidebar">
+                <button class="dash-button" type="button">
+                    <img src="assets/setting.png" alt="Setting">
+                    <p class="nav-item">Setting</p>
+                </button>
+                <button class="dash-button-logout" type="button">
+                    <img src="assets/logout.png" alt="Logout">
+                    <p class="nav-item">Logout</p>
+                </button>
+            </nav>
+        </aside>
 
-    <main class="main-content">
-        <header class="top-bar">
-            <input type="text" placeholder="Searching" class="search-bar"/>
-            <div class="user-mark">
-                <img src="assets/avatar.png" alt="Avatar">
-                <div class="user-info">
-                    <span>George Nico</span>
-                    <small>Admin</small>
-                </div>
-            </div>
-        </header>
-
-        <section class="content-area">
-            <div class="content-wrapper">
-                <div class="header-section">
-                    <h2>Product</h2>
-                    <p>Manage our product inventory, ensuring all listings are up-to-date and accurate</p>
-                    <div class="action-buttons">
-                        <button class="btn-select">Select</button>
-                        <button class="btn-sort">Sort by</button>
-                        <button class="btn-add">+ Add product</button>
+        <main class="main-content">
+            <header class="top-bar">
+                <input type="text" placeholder="Searching" class="search-bar"/>
+                <div class="user-mark">
+                    <img src="assets/bell.png" alt="bell">
+                    <img src="assets/avatar.png" alt="Avatar">
+                    <div class="user-info">
+                        <span>George Nico</span>
+                        <small>Admin</small>
                     </div>
                 </div>
+            </header>
 
-                <div class="main-body">
-                    <div class="grid-container">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
+            <section class="content-area">
+                <div class="content-wrapper">
+                    <div class="header-section">
+                        <div class="header-subtitle">
+                            <h2>Product</h2>
+                            <span>Manage our product inventory, ensuring all listings are up-to-date and accurate</span>
                         </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="product-header">
-                                <h3 class="product-name">Toyota GT 86</h3>
-                                <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
-                            </div>
-
-                            <div class="image-placeholder">
-                                <img src="assets/product-background.png" alt="product-background">
-                            </div>
-                            
-                            <div class="product-details">
-                                <img src="assets/fuel.png" alt="fuel"/>
-                                <span>80L</span>
-                                <img src="assets/gear.png" alt="manual" />
-                                <span>Manual</span>
-                                <img src="assets/seat.png" alt="seat" />
-                                <span>2</span>
-                            </div>
-
-                            <div class="product_footer">
-                                <div class="price">$37.612</div>
-                                <button class="btn-edit">Edit</button>
-                            </div>
+                        <div class="action-buttons">
+                            <button class="btn-bar">
+                                <img src="assets/select.png" alt="select">
+                                <span>Select</span>
+                            </button>
+                            <button class="btn-bar">
+                                <img src="assets/sort.png" alt="Sortby">
+                                <span>Sort by</span>
+                            </button>
+                            <button class="btn-bar-active">
+                                <img src="assets/plus.png" alt="add-product">
+                                <span>Add Product</span>
+                            </button>
                         </div>
                     </div>
 
-                    <aside class="filters">
-                        <div class="filter-group">
-                            <h3>Filter</h3>
-                            <h4>Price</h4>
-                            <img src="assets/picture.png" alt="Price Graph">
+                    <div class="main-body">
+                        <div class="grid-container">
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <h3 class="product-name">Toyota GT 86</h3>
+                                    <button class="btn-bin"><img src="assets/bin.png" alt="bin"></button>
+                                </div>
+
+                                <div class="image-placeholder">
+                                    <img src="assets/product-background.png" alt="product-background">
+                                </div>
+                                
+                                <div class="product-details">
+                                    <img src="assets/fuel.png" alt="fuel"/>
+                                    <span>80L</span>
+                                    <img src="assets/gear.png" alt="manual" />
+                                    <span>Manual</span>
+                                    <img src="assets/seat.png" alt="seat" />
+                                    <span>2</span>
+                                </div>
+
+                                <div class="product_footer">
+                                    <div class="price">$37.612</div>
+                                    <button class="btn-edit">Edit</button>
+                                </div>
+                            </div>
                         </div>
 
-                        <form class="form-filter">
-                            <div class="form-element">
-                                <label for="min">Min</label>
-                                <input type="number">
-                            </div>
-                            <div class="form-element">
-                                <label for="max">Max</label>
-                                <input type="number">
-                            </div>
-                        </form>
-
-                        <div class="filter-group">
-                            <div class="filter-bodytype">
-                                <img src="assets/bodytype.png" alt="Bodytype">
-                                <h4>Bodytype</h4>
+                        <aside class="filters">
+                            <div class="filter-group">
+                                <h3>Filter</h3>
+                                <h4>Price</h4>
+                                <img src="assets/picture.png" alt="Price Graph">
                             </div>
 
-                            <div class="checkbox-list">
-                                <label><input type="checkbox" checked /> Coupe</label>
-                                <label><input type="checkbox" checked /> SUV</label>
-                                <label><input type="checkbox" /> Sedan</label>
-                                <label><input type="checkbox" /> Pickup</label>
-                                <label><input type="checkbox" /> Crossover</label>
-                                <label><input type="checkbox" /> MPV</label>
-                                <label><input type="checkbox" /> Hatchback</label>
-                                <label><input type="checkbox" /> VAN</label>
+                            <form class="form-filter">
+                                <div class="form-element">
+                                    <label for="min">Min</label>
+                                    <input type="number" placeholder="200">
+                                </div>
+                                <div class="form-element">
+                                    <label for="max">Max</label>
+                                    <input type="number" placeholder="4000">
+                                </div>
+                            </form>
+
+                            <div class="filter-group">
+                                <div class="filter-bodytype">
+                                    <img src="assets/bodytype.png" alt="Bodytype">
+                                    <h4>Bodytype</h4>
+                                </div>
+
+                                <div class="checkbox-list">
+                                    <label><input type="checkbox" checked /> Coupe</label>
+                                    <label><input type="checkbox" checked /> SUV</label>
+                                    <label><input type="checkbox" /> Sedan</label>
+                                    <label><input type="checkbox" /> Pickup</label>
+                                    <label><input type="checkbox" /> Crossover</label>
+                                    <label><input type="checkbox" /> MPV</label>
+                                    <label><input type="checkbox" /> Hatchback</label>
+                                    <label><input type="checkbox" /> VAN</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="filter-group">
-                            <h4>Transition</h4>
-                            <label><input type="radio" name="trans" checked /> Any</label>
-                            <label><input type="radio" name="trans" /> Manual</label>
-                            <label><input type="radio" name="trans" /> Automatic</label>
-                        </div>
+                            <div class="filter-group">
+                                <div class="filter-bodytype">
+                                    <img src="assets/gear.png" alt="Transition">
+                                    <h4>Transition</h4>
+                                </div>
+                                <div class="filter-options">
+                                    <label><input type="radio" name="trans" checked /> Any</label>
+                                    <label><input type="radio" name="trans" /> Manual</label>
+                                    <label><input type="radio" name="trans" /> Automatic</label>
+                                </div>
+                            </div>
 
-                        <div class="filter-group">
-                            <h4>Seat capacity</h4>
-                            <button>-</button>
-                            <span>2</span>
-                            <button>+</button>
-                        </div>
+                            <div class="seat-capacity">
+                                <div class="filter-bodytype">
+                                    <img src="assets/seat.png" alt="Transition">
+                                    <h4>Seat capacity</h4>
+                                </div>
+                                <div class="passenger-capacity">
+                                    <div class="capacity-display">
+                                        <button>-</button>
+                                        <span>2</span>
+                                        <button>+</button>
+                                    </div>
+                                        
+                                    <span>Passenger</span>
+                                </div>
+                            </div>
 
-                        <button class="btn-confirm">Confirm</button>
-                    </aside>
+                            <button class="btn-confirm">Confirm</button>
 
+                            <div>
+                                <div class="stock-title">
+                                    <h3>Stock available</h3>
+                                    <a href="#">View more</a>
+                                </div>
+                                <div>
+                                    <div>Total product</div>
+                                    <div class="qty-product">123</div>
+                                </div>
+
+                                <img src="assets/rectangle-product.png" alt="availability-bar" class="img-bar">
+
+                                <div class="stock-bar-container">
+                                    <div class="stock-container">
+                                        <div class="legend-available"></div>
+                                        <div>Available</div>
+                                    </div>
+
+                                    <div class="stock-container">
+                                        <div class="legend-lowstock"></div>
+                                        <div>Low stock</div>
+                                    </div>
+
+                                    <div class="stock-container">
+                                        <div class="legend-outofstock"></div>
+                                        <div>Out of stock</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
                 </div>
-                
-            </div>
 
-            <div class="pagination">
-                <button class="btn-page">Previous</button>
-                <button class="btn-page">1</button>
-                <span>...</span>
-                <button class="btn-page">9</button>
-                <button class="btn-page">10</button>
-                <button class="btn-page">Next</button>
-            </div>
-        </section>
-
-        
-    </main>
-  </div>
+                <div class="pagination">
+                    <button class="btn-page-prev">Previous</button>
+                    <button class="btn-page-number-selected">1</button>
+                    <span>...</span>
+                    <button class="btn-page-number">9</button>
+                    <button class="btn-page-number">10</button>
+                    <button class="btn-page-next">Next</button>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
