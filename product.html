@@ -35,6 +35,17 @@
                 <p class="nav-item">Sales</p>
             </button>
         </nav>
+        <nav class="footer-sidebar">
+            <button class="dash-button" type="button">
+                <img src="assets/setting.png" alt="Setting">
+                <p class="nav-item">Setting</p>
+            </button>
+            <button class="dash-button-logout" type="button">
+                <img src="assets/logout.png" alt="Logout">
+                <p class="nav-item">Logout</p>
+            </button>
+        </nav>
+
     
     </aside>
 
@@ -53,12 +64,23 @@
         <section class="content-area">
             <div class="content-wrapper">
                 <div class="header-section">
-                    <h2>Product</h2>
-                    <p>Manage our product inventory, ensuring all listings are up-to-date and accurate</p>
+                    <div class="header-subtitle">
+                        <h2>Product</h2>
+                        <span>Manage our product inventory, ensuring all listings are up-to-date and accurate</span>
+                    </div>
                     <div class="action-buttons">
-                        <button class="btn-select">Select</button>
-                        <button class="btn-sort">Sort by</button>
-                        <button class="btn-add">+ Add product</button>
+                        <button class="btn-bar">
+                            <img src="assets/select.png" alt="select">
+                            <span>Select</span>
+                        </button>
+                        <button class="btn-bar">
+                            <img src="assets/sort.png" alt="Sortby">
+                            <span>Sort by</span>
+                        </button>
+                        <button class="btn-bar-active">
+                            <img src="assets/plus.png" alt="add-product">
+                            <span>Add Product</span>
+                        </button>
                     </div>
                 </div>
 
@@ -375,11 +397,11 @@
                         <form class="form-filter">
                             <div class="form-element">
                                 <label for="min">Min</label>
-                                <input type="number">
+                                <input type="number" placeholder="200">
                             </div>
                             <div class="form-element">
                                 <label for="max">Max</label>
-                                <input type="number">
+                                <input type="number" placeholder="4000">
                             </div>
                         </form>
 

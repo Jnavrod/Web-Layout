@@ -24,6 +24,7 @@ body {
     gap: 20px;
     height: 100vh;
     box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    position: relative;
 }
 
 .logo {
@@ -53,6 +54,28 @@ body {
 .dash-button img {
     width: 24px;
     height: 24px;
+}
+
+.footer-sidebar {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.dash-button-logout {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 12px;
+    padding-left: 16px;
+}
+
+.dash-button-logout .nav-item {
+    color: red;
 }
 
 .nav-item {
@@ -158,9 +181,14 @@ body {
     margin-bottom: 20px;
 }
 
+.header-subtitle {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+}
+
 .header-section h2 {
     font-size: 1.8rem;
-    flex: 1;
 }
 
 .action-buttons {
@@ -169,14 +197,34 @@ body {
     flex-wrap: wrap;
 }
 
-.action-buttons button {
+.btn-bar {
     margin-right: 10px;
     padding: 6px 12px;
     border: none;
-    border-radius: 6px;
-    background: #000;
-    color: #fff;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
     cursor: pointer;
+    width: 118px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-bar-active {
+    margin-right: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 156px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-body {
@@ -338,13 +386,11 @@ body {
   position: relative;
 }
 
-/* Borde + fondo verde */
 .filter-options input[type="radio"]:checked {
   border-color: #adde34;
   background-color: #adde34;
 }
 
-/* Anillo blanco centrado */
 .filter-options input[type="radio"]:checked::before {
   content: "";
   position: absolute;
@@ -357,7 +403,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Punto verde centrado */
 .filter-options input[type="radio"]:checked::after {
   content: "";
   position: absolute;
@@ -369,6 +414,11 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.passenger-capacity {
+    display: flex;
+    margin-bottom: 10px;
 }
 
 .capacity-display {
@@ -417,7 +467,7 @@ input[type="checkbox"]:checked::after {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/**/
+
 
 .form-filter {
     width: 100%;
@@ -428,6 +478,17 @@ input[type="checkbox"]:checked::after {
 .form-element {
     display: flex;
     flex-direction: column;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.form-element label {
+    margin-bottom: 10px;
+}
+
+.form-element input {
+    border: none;
+    
 }
 
 .btn-confirm {
